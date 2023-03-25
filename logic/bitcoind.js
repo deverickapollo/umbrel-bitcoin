@@ -234,7 +234,7 @@ async function getBlocks(fromHeight, toHeight) {
       const formattedBlock = await initializedMemoizedGetFormattedBlock(currentHeight);
       blocks.push(formattedBlock);
     } catch(e) {
-      console.error('Error memoizing formatted blocks')
+      console.error('Error memoizing formatted blocks');
     }
   }
 
